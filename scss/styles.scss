@@ -13,10 +13,18 @@
     background-color: $tealCol;
     padding: 5px;
     display: inline-block;
+    &:hover {
+      background: grey;
+      cursor: pointer;
+    }
   }
 
   li:nth-child(even) {
     background-color: $navyCol;
+    &:hover {
+      background: grey;
+      cursor: pointer;
+    }
   }
 
   a {
