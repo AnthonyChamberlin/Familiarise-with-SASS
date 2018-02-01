@@ -20,7 +20,8 @@
   width: 100%;
   position: relative;
   color: #ffffff;
-  text-align: right; }
+  text-align: right;
+  margin-right: 50px; }
   .lead-banner .banner-content {
     position: absolute;
     top: 50px;
@@ -35,34 +36,6 @@
   .lead-banner span.title {
     font-weight: normal;
     margin-bottom: 30px; }
-  .lead-banner span {
-    margin-right: 50px; }
-
-.lessons-banner {
-  width: 100%;
-  position: relative;
-  color: #ffffff; }
-  .lessons-banner .banner-content {
-    position: absolute;
-    top: 50px;
-    width: 100%; }
-  .lessons-banner img {
-    width: 100%; }
-  .lessons-banner span {
-    font-size: 40px;
-    display: block;
-    text-transform: uppercase;
-    font-weight: bold; }
-  .lessons-banner span.title {
-    font-weight: normal;
-    margin-bottom: 30px; }
-  .lessons-banner span {
-    margin-left: 50px; }
-  .lessons-banner ul {
-    margin-left: 50px; }
-  .lessons-banner li {
-    text-transform: uppercase;
-    margin: 25px 0; }
 
 @media screen and (max-width: 768px) {
   #menu {

@@ -1,6 +1,40 @@
+// ----- Variables
+
+$sectionHeading: 24px;
+$bannerHeading: 40px;
 $tealCol: #28a06c;
 $navyCol: #0a1f2d;
 $whiteCol: #ffffff;
+
+// ----- Mixins
+
+@mixin banner {
+  width: 100%;
+  position: relative;
+  color: $whiteCol;
+
+  .banner-content {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-size: $bannerHeading;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  span.title {
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+}
+
+
+// ----- Styles
 
 #menu {
   display: grid;
@@ -28,8 +62,30 @@ $whiteCol: #ffffff;
   display: none;
 }
 
+.lead-banner {
+  @include banner;
+  text-align: right;
+  span {
+    margin-right: 50px;
+  }
+}
 
-// media queries
+.lessons-banner {
+  @include banner;
+  span {
+    margin-left: 50px;
+  }
+  ul {
+    margin-left: 50px;
+  }
+  li {
+    text-transform: uppercase;
+    margin: 25px 0;
+  }
+}
+
+
+// ----- Media Queries
 
 @media screen and (max-width: 768px) {
   #menu {
