@@ -1,9 +1,14 @@
-.rule {
-  color: red;
-  a{
-    color: blue;
-    span {
-      color: pink;
-    }
-  }
+// Color Variables
+$deepBlue: #032f3e;
+
+// Content Variables
+$sectionHeading: 30px;
+
+#main-nav {
+  background: $deepBlue;
+}
+
+section h1 {
+  font-size: $sectionHeading;
+  color: $deepBlue;
 }
