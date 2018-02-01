@@ -1,40 +1,7 @@
-// ----- Variables
+@import "reset";
+@import "variables";
+@import "mixins";
 
-$sectionHeading: 24px;
-$bannerHeading: 40px;
-$tealCol: #28a06c;
-$navyCol: #0a1f2d;
-$whiteCol: #ffffff;
-
-// ----- Mixins
-
-@mixin banner {
-  width: 100%;
-  position: relative;
-  color: $whiteCol;
-
-  .banner-content {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-  }
-  img {
-    width: 100%;
-  }
-  span {
-    font-size: $bannerHeading;
-    display: block;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  span.title {
-    font-weight: normal;
-    margin-bottom: 30px;
-  }
-}
-
-
-// ----- Styles
 
 #menu {
   display: grid;
