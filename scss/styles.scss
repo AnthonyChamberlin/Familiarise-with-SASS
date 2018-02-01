@@ -1,14 +1,45 @@
-// Color Variables
-$deepBlue: #032f3e;
+$tealCol: #28a06c;
+$navyCol: #0a1f2d;
+$whiteCol: #ffffff;
 
-// Content Variables
-$sectionHeading: 30px;
+#menu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0;
+  text-align: center;
 
-#main-nav {
-  background: $deepBlue;
+  li {
+    background-color: $tealCol;
+    padding: 5px;
+    display: inline-block;
+  }
+
+  li:nth-child(even) {
+    background-color: $navyCol;
+  }
+
+  a {
+    color: $whiteCol !important;
+    text-decoration: none;
+  }
 }
 
-section h1 {
-  font-size: $sectionHeading;
-  color: $deepBlue;
+.show-menu, #show-menu {
+  display: none;
+}
+
+
+// media queries
+
+@media screen and (max-width: 768px) {
+  #menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  #menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
